@@ -1,3 +1,18 @@
+## Message to Gary
+
+Use the following instructions to run this project:
+
+```
+git clone git@github.com:Jmatos87/eog-challengev2.git testing
+cd testing
+npm install
+npm start
+
+```
+
+Once the npm install starts you may want to grab some coffee... it'll take a few minutes. The npm start will create a new tab and run the project from localhost:3000.  Thank you for the challenge. :)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
