@@ -3,7 +3,7 @@
 Use the following instructions to run this project:
 
 ```
-git clone git@github.com:Jmatos87/eog-challengev2.git testing
+git clone https://github.com/Jmatos87/eog-challengev2.git testing
 cd testing
 npm install
 npm start
