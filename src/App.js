@@ -1,10 +1,14 @@
 import React from 'react';
 
-import Header from './components/Header.js';
 import ChartComponent from './components/LineChart.js';
 import GaugeComponent from './components/Gauge.js';
 
 import {Responsive, WidthProvider} from 'react-grid-layout';
+import AppBar from 'material-ui/AppBar';
+import Paper from 'material-ui/Paper';
+import FontIcon from 'material-ui/FontIcon';
+
+const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
 
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 
@@ -14,8 +18,6 @@ const ResponsiveReactGridLayout = WidthProvider(Responsive);
         { i: '2', x: 0, y: 2, w: 2, h: 1 }
       ]
     };
-
-
 
 class App extends React.Component {
   constructor() {
@@ -29,26 +31,26 @@ class App extends React.Component {
   render() {
 
     return (
-      
+        <div>
+          <AppBar
+           title="EOG Random Number Generator"
+           style={{"backgroundColor":"red"}}
+           showMenuIconButton={false}/>
 
-    	<div id="wrapper">
-        <Header/>
-
-        <ResponsiveReactGridLayout className="layout" layouts={layout}
+           <ResponsiveReactGridLayout className="layout" layouts={layout}
         breakpoints={{lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0}}
         cols={{lg: 12, md: 10, sm: 6, xs: 4, xxs: 2}}
         useCSSTransforms={true}>
-
-           <div key="1" >
+           <Paper key="1" >
               <ChartComponent rng={this.props.rng}/>
-           </div>
-           <div key="2">
+           </Paper>
+           <Paper key="2">
               <GaugeComponent rng={this.props.rng}/>
-           </div>
+           </Paper>
 
         </ResponsiveReactGridLayout>
-      </div>
-      
+
+        </div>
     );
   }
 }

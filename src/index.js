@@ -4,7 +4,12 @@ import { Provider, connect } from 'react-redux'
 import { createStore } from 'redux'
 import rngApp from './reducers'
 import { valueChanger } from './actions'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 import App from './App.js';
+
+var injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
 
 let store = createStore(rngApp);
 
@@ -40,5 +45,7 @@ const mapStateToProps = (state, ownProps) => {
 const ConnectedApp = connect(mapStateToProps, null)(App);
  
 ReactDOM.render(<Provider store={store}>
-    <ConnectedApp />
+	<MuiThemeProvider>
+    	<ConnectedApp />
+    </MuiThemeProvider>
   </Provider>, document.getElementById('root'));

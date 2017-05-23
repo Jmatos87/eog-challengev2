@@ -13,7 +13,7 @@ class GaugeComponent extends React.Component {
 		return(
 		
 				<Gauge value={this.props.rng[this.props.rng.length-1].value} 
-				max={1000} width={250} height={130} label="" />
+				max={1000} width={220} height={130} label="" />
 
 		)
 	}

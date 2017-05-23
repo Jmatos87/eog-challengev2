@@ -12,7 +12,7 @@ class ChartComponent extends React.Component {
 	render(){
 	
 		return(
-				<LineChart width={600} height={310} data={this.props.rng}
+				<LineChart width={550} height={310} data={this.props.rng}
 		          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
 		          <XAxis dataKey="index"/>
 		          <YAxis />
