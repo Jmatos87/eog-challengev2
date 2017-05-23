@@ -6,9 +6,6 @@ import GaugeComponent from './components/Gauge.js';
 import {Responsive, WidthProvider} from 'react-grid-layout';
 import AppBar from 'material-ui/AppBar';
 import Paper from 'material-ui/Paper';
-import FontIcon from 'material-ui/FontIcon';
-
-const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
 
 //Initialize Grid Component
 
