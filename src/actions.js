@@ -2,7 +2,7 @@
  * action types
  */
 
-export const CHANGE_VALUE = 'CHANGE_VALUE'
+export const CHANGE_VALUE = 'CHANGE_VALUE';
 
 /*
  * action creators
@@ -10,4 +10,4 @@ export const CHANGE_VALUE = 'CHANGE_VALUE'
 
 export function valueChanger() {
 	return { type: CHANGE_VALUE }
-} 
+};

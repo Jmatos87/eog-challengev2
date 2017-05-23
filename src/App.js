@@ -10,7 +10,11 @@ import FontIcon from 'material-ui/FontIcon';
 
 const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
 
+//Initialize Grid Component
+
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
+
+//Define component grid dimensions
 
  var layout = {
      lg: [
@@ -38,12 +42,14 @@ class App extends React.Component {
            showMenuIconButton={false}/>
 
            <ResponsiveReactGridLayout className="layout" layouts={layout}
-        breakpoints={{lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0}}
-        cols={{lg: 12, md: 10, sm: 6, xs: 4, xxs: 2}}
-        useCSSTransforms={true}>
+            breakpoints={{lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0}}
+            cols={{lg: 12, md: 10, sm: 6, xs: 4, xxs: 2}}
+            useCSSTransforms={true}>
+
            <Paper key="1" >
               <ChartComponent rng={this.props.rng}/>
            </Paper>
+
            <Paper key="2">
               <GaugeComponent rng={this.props.rng}/>
            </Paper>
@@ -53,5 +59,5 @@ class App extends React.Component {
         </div>
     );
   }
-}
+};
 export default App;
