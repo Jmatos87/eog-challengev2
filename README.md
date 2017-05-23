@@ -12,7 +12,7 @@ npm start
 
 Once the npm install starts you may want to grab some coffee... it'll take a few minutes. The npm start will create a new tab and run the project from localhost:3000.  Thank you for the challenge. :)
 
-##Read below for more info on Create React App
+## Read below for more info on Create React App
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
